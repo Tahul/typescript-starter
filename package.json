@@ -1,0 +1,57 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "🐜 Minimalist starting point for your next TypeScript project",
+  "repository": "https://github.com/Tahul/typescript-starter",
+  "bugs": {
+    "url": "https://github.com/Tahul/typescript-starter/issues"
+  },
+  "homepage": "https://github.com/Tahul/typescript-starter#readme",
+  "author": "Yaël GUILLOUX <yael.guilloux@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "starter"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm-bundler.js",
+  "unpkg": "dist/index.global.js",
+  "jsdelivr": "dist/index.global.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "unbuild",
+    "lint": "prettier -c --parser typescript \"{src,__tests__,e2e}/**/*.[jt]s?(x)\"",
+    "lint:fix": "yarn run lint --write",
+    "test:types": "tsc --build tsconfig.json",
+    "test:unit": "jest",
+    "test": "yarn run test:types && yarn run test:unit"
+  },
+  "files": [
+    "dist/**/*",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.1.2",
+    "pascalcase": "^1.0.0",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.3.5",
+    "unbuild": "^0.4.2",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  }
+}
