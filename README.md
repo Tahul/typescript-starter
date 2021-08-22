@@ -2,10 +2,16 @@
 
 Minimalist starting point for your next TypeScript project.
 
-- 🧩 Latest TypeScript
+- 🧩 Latest [TypeScript](https://www.typescriptlang.org)
 - 🤹 Testing using [Jest](https://jestjs.io)
 - 🚚 Built using [unbuild](https://github.com/unjs/unbuild)
+- 🌈 Complete GitHub CI ready (test, build, publish)
 - 🏎 Edit variables, implement, test, publish
+
+## Setup
+
+- Update package.json
+- Add NPM_AUTH_TOKEN to GitHub repository secrets
 
 ## Commands
 
@@ -38,17 +44,6 @@ Test typings:
 ```bash
 yarn test:types
 ```
-
-## To-Do
-
-- [ ] Edit package.json `name`, `description`, `repository` and `author` keys.
-- [ ] Remove .vscode folder (containing recommended extensions)
-- [ ] Edit README.md.
-- [ ] Implement my composable.
-- [ ] Test my composable.
-- [ ] Make a demo of my composable in the `demo` folder.
-- [ ] Document my composable.
-- [ ] Publish on [NPM](npmjs.com), [awesome-vue](https://github.com/vuejs/awesome-vue), [vue-forum](https://forum.vuejs.org/), [Vue Discord](https://fr.vuejs.org/v2/guide/join.html).
 
 ## Contributing
 
