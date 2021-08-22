@@ -5,13 +5,17 @@ Minimalist starting point for your next TypeScript project.
 - 🧩 Latest [TypeScript](https://www.typescriptlang.org)
 - 🤹 Testing using [Jest](https://jestjs.io)
 - 🚚 Built using [unbuild](https://github.com/unjs/unbuild)
+- ✅ Type definitions with [untyped](https://untyped.unjs.io/)
 - 🌈 Complete GitHub CI ready (test, build, publish)
 - 🏎 Edit variables, implement, test, publish
 
 ## Setup
 
-- Update package.json
-- Add NPM_AUTH_TOKEN to GitHub repository secrets
+- Update `package.json`
+- Add `NPM_AUTH_TOKEN` to GitHub repository secrets
+- Implement from `index.ts`
+- Build with `yarn build`
+- Bump `package.json > version` key to make a release from GitHub action
 
 ## Commands
 

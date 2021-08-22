@@ -1,12 +1,6 @@
 {
-  "include": [
-    "src/**/*",
-    "tests/**/*"
-  ],
-  "exclude": [
-    "dist",
-    "node_modules"
-  ],
+  "include": ["scripts/watch.ts", "src/**/*", "tests/**/*"],
+  "exclude": ["dist", "node_modules"],
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist",
@@ -32,6 +26,6 @@
     "removeComments": false,
 
     "lib": ["esnext"],
-    "types": ["node", "jest"],
+    "types": ["node", "jest"]
   }
 }

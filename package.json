@@ -17,6 +17,7 @@
   "module": "dist/index.mjs",
   "types": "dist/src/index.d.ts",
   "scripts": {
+    "dev": "jiti scripts/watch.ts --cache",
     "build": "unbuild",
     "lint": "prettier -c --parser typescript \"{src,tests}/**/*.[jt]s?(x)\"",
     "lint:fix": "yarn run lint --write",
@@ -32,6 +33,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^27.0.1",
+    "chokidar": "^3.5.2",
     "jest": "^27.0.6",
     "lint-staged": "^11.1.2",
     "pascalcase": "^1.0.0",
