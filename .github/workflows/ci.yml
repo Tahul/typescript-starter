@@ -60,4 +60,4 @@ jobs:
         if: github.event_name == 'push' && steps.check.outputs.changed == 'true'
         run: ./scripts/release.sh
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
