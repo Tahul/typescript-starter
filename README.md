@@ -1,13 +1,10 @@
-# 🪝 vue-composable-starter
+# 🐜 typescript-starter
 
-A minimalist starting point for your next Vue composable.
+Minimalist starting point for your next TypeScript project.
 
-- 🧩 TypeScript by default
-- 🏋️‍♀️ Vue as peer dependency (minimal bundle size)
-- 🤟 Vue 2 & 3 support using [vue-demi](https://github.com/antfu/vue-demi)
+- 🧩 Latest TypeScript
 - 🤹 Testing using [Jest](https://jestjs.io)
-- 🚚 Exports **cjs**, **esm** and **global** bundles
-- 📸 Demo ready to be written and bundled using [Vite](https://vitejs.dev/)
+- 🚚 Built using [unbuild](https://github.com/unjs/unbuild)
 - 🏎 Edit variables, implement, test, publish
 
 ## Commands
@@ -22,18 +19,6 @@ Build with watcher:
 
 ```bash
 yarn dev
-```
-
-Run the demo:
-
-```bash
-yarn dev:demo
-```
-
-Build the demo:
-
-```bash
-yarn build:demo
 ```
 
 Lint the package:
