@@ -1,14 +1,15 @@
-import { useToggle } from '../src'
+import { useTest } from '../src'
 
-describe('useToggle', () => {
-  const [toggleable, toggle] = useToggle(true)
-  it('returns a boolean ref', () => {
-    expect(toggleable.value).toBe(true)
+describe('useTest', () => {
+  it('returns default value', () => {
+    const test = useTest()
+
+    expect(test).toBe('Hello World!')
   })
 
-  it('is toggleable', () => {
-    toggle()
+  it('is variable', () => {
+    const test = useTest('Bye Bye!')
 
-    expect(toggleable.value).toBe(false)
+    expect(test).toBe('Bye Bye!')
   })
 })
